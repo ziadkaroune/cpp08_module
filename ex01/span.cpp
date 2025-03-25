@@ -4,7 +4,9 @@ Span::Span(unsigned int size) : _size(size) , _track(0)
 {
 
 }
-const char
+const char *Span::Nospace::what() const throw(){
+    return("you excede the limit");
+}
 void Span::addNumber(int num)
 {
     if(this->_track < this->_size)
