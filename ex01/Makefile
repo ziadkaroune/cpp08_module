@@ -1,5 +1,5 @@
 NAME	=	span
-SRCS	=	main.cpp
+SRCS	=	main.cpp  span.cpp
 OBJS	=	$(SRCS:.cpp=.o)
 RM		=	rm -f
 FLAGS	=	-Werror -Wall -Wextra	-std=c++98
